@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="style.css">
+        </head>
+        <title> MY FAMILY BOOK</title>
+    <body>
+        <h1>My Family Book </h1>
+        <hr> <hr> 
+        <img id="family_time" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg">
+        <h3 id="one"> 1. Our Family Book</h3>
+        <button type="button" onclick="family()"> Next</button>
+        <hr>
+        <script>
+            var names=[
+                "2.My Father( Tarun Arora)",
+                "3.My Mother( Ankita Arora)",
+                "4.My sister( Niyati Arora)",
+                "5.Me( Vardhini Arora)"
+               
+            ];
+            var images=[
+              "https://lh3.googleusercontent.com/NOX74vkgCUjEGyNz-xA4bfkc6PTUkDwduM6oIQPBcayA5d7-jOef1wJKhWxa1UnTgwhKYGmWBK120BW8GZu697olMmG6RyRenPQLeJ5uh0Hvj8FwMEoDktTonqPdFDS6eOzptLOOWndpd7cPLPODnqaLz_pLsPIGJfa6ZTXKFndghRRqXepj6fSu7k0ivoiCzbdAI-2J91Y-dSTVvyt4Igq5Cl3wbix1vIze0T9_k47tHMWCkdIlbZ5iZ70VTdDYBxgYWZzcyNTiWNiPgiaxHEmgYADuG9LQ5Lus-nM7N-S-x1rGZSQX1N-rFqo_-fVl7ZpyRlvOnq7c2AqpdNUaDinHzugUsfw_LCOUZIWCFyzZqJeHMONt6Lm4Xphm0Kces4t2L-qjjZXInS6mtoNgG8LAZUzegt6anSGXx9xcfZuMF5Dvn1H4_n1YSy-zbF664FsaYw6wM3bXjg5b6Ba1o5Cm5yd2G8IXyffCcjfK4Jp0_Rl5cPKNjC5gzeI0_wvF3GnFk-D8dh9Ao6IKV6d43paNX680migLCUfQ1BJsaPTGD9uTrq2PIVzafxZpkJtNRg6dBKqzCpLqh8PV1lKpTRFQ1teUBOcPfdy1hCM6zRykIq-45xISXpwjFrxwAUie-VxuC48ItQuL1SmWOOuYtF945CYL8tp_ojrTO7zLw5dOI4fXGlpPPP6ZrcvmKDKX10_V6fOBtlU_W82-kKEN2qhX=w678-h903-no?authuser=0",
+              "https://lh3.googleusercontent.com/J6-aUmnzu-JoyMoMFueKzYdpMK95YDMo4Ixig2Cbss8JLq0Iju0UyfyeI11Pf0Evgue1Td5CXQl7J8_K__fNMYT8OMvt6KVXTDY69j0DdCeZjrJUGXfw0aDi3NhXwX6szsAuyiwWQj5qhIh_dI7Ir2mYncz1pFltIkRx5aoMZYzWDCLSS6YlLzJKLilI4nH_JjhQMwdG4YiDTeHbQkTgrooAAd0sFOJYmUaf29hEmd7d-mWHgKkpIonndUQX3IaWY0lyGvIwPyV67RGgJO3uU8YIYzH-EBHcpQrdHhLtGT_7h4yHJY3uZ0VzziO6V0T-q-JbJTKibyOW_wNoaVo-_iOKpCRBD0DGKO15XYxFYYPrasj8t_HYTTpEPpLkPkcSxsYVxfC2ic6Y63I8MPGVp0Yjjb9rtce6MwOe4n_kFFUYZsJnMPWjxMZOW7aFW-mwY9OlmAaTTqVC9zimoiZDIg_lNild1sLDsFNZ3eZlEfGA6izH62B-HAEo35gp-wceR9XVCREfBoe7VElZx8ZTY7tTnPotsiU3NGKCDHq8tmzK9VkwM6tXgkZxWoWHo_9VtkV4vfbPUU-_FDQnVwJGBEJkCyjWprB8wqI0pF3SXdKiJysjAVaWgSN6I_Ank-wlAdAXKM7sS-DTr_OuIe4L-L0CvLZgKVEtTGDAwGmQuVR7RgHqN2sl4s0gDFG6CoVU14avxx6FN0k1KHsIqW9aNAYRDw=w678-h903-no?authuser=0",
+              "https://lh3.googleusercontent.com/1oqPEeG1xiFBsiWE8K6GL6yc2J6iQGb2YykS_LPAsBQnPNhTL2ea-VSsj8S9Qfuo95-DCyqaXFZs-eSBB4lgu0gaSt1tzm_z8XOuwAAbsG7yKBUMKxbW1icbHiQPjpQ8MFGNM917G3eMIjnGEHqFAmxtRnj0iuKQ1vKnQBp9Yc9TOKCewMew1rFG8ei3IELnFoT8ZcK0AluQ9QTiOrX_VgZOj79Y4H3r4OujsAEj0pCs6VvhAUv5lz_wCKoFw05Xzc6sreftx5KHYM2NoELiqNKZBmowiLqewrF_VzuJwdVNKgQpD2QbZeKJbtVbrFHLIxN6d_67YAw-6lmj83mHETmKnTwjS1kXTd9H0jSxNS8om6I6FxGfpDSJ0IbXKXdQ2xvWzdtIU6sCBLJ533QvmfH2eMU_oLWyN9BFRpHFdg-C1FE8MsTYOG3ckHMh4MRIFXllDRO2g5KfpuM0z92iaHQ6xWauJ5HmEKJ7kf9LgKr5WqspHE4Kzj0wzCgQKonfIAj7OaWo5balfL91cbKCNfXcOnBuaC3hGKMMw6pEwaObXXH6BIM8Gt-KnnyMVZw3L4dA6ogxvmiiUe2KHchBrwA65676Gs9eEH0mYfxh-Z2Fx1Lx33s2SEa_SH0IyLdvR-45yPK3W_P4TMk4kokbeYK6MocqHPrsSSjb44Nf2IxWnecQepw8KJiZWjmgXk2Ux_jQpNcY3g0Z7fr7ogtFN8rvBw=w678-h903-no?authuser=0",
+              "https://lh3.googleusercontent.com/o6dQbS6J9rp_H0Aeuhmw0k40A1Jjzka_trYX4vs5u3ARyvmLXXCcV53EDcOa9d8Vje6KBjPs0SLsuD3Z6vQBEbkDxS7dmVbl04ectrRTxAl1pkhyCh9UuimNpADkY18APaSX-V3pQgqeSXTd3qN8R7xrNm4I9ZeDP5x7P3JhofEWlOfhDIYhp7A43CjMNGlDGpiCpVomfavVz41UEjZ3v2jPKh9OM7-dZyYXpuzuCNUUh55s8iA0Nw4yL9TU07g4o2ghEWXEc1mH2zTPzzc6AVJMRkjX05FXgK0xB8V4rTVYXh4ZD5YTEOZqWouvUtedQdNO_LIIgM8Ke0jYEGJcRAYti-XbfkxqhRcF4cSgwvYBEPREy-ZzUHp8PsgKhX2fwXXm6iBpU-Ys_600ovx3CFk54NO5tczbeoAyW3m1AeHaNm6nf7XX__-EA1Iki_FI4sFTfUVqzT0oYZkaMs6NrsJ90UClkSewkZYEVy2R37BLwY67mMNKCeiS1hkfOosq51a1NO3glwH280654tlm1pkjMCrzHm64MeVQBtsczQZ25-kK8O6sl9ZdTIevcwqmfMCxCVcZHLzH1XfKFg1NYbWQH6S3Vv_zO1TKy9HH0ebGq2ur8yyAAR4jtQY9Ge1jhVtLamnAA3ws2yPIYNM7Naf5oIBrUTqI_s4RDVrXFh9dxmikdFIxgSJ9IYi71rGRH41I-j0luLDmFdhHbR2uaw0-Zw=w678-h903-no?authuser=0"
+              ];
+            var i=0;
+            function family(){
+                document.getElementById("one").innerHTML=names[i];
+                document.getElementById("family_time").src=images[i];
+                i++;
+                if(i==4){
+                    i=0;
+                }
+            }
+        </script>
+    </body>
+</html>
